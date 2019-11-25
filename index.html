@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pankkiautomaatti</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="automaatti.js"></script>
+</head>
+
+<body onload="init()">
+  <h1 class="header centered">Pankkiautomaatti<img src="logo.svg" width="60px"></h1>
+  <p class="account-details centered">Tilin saldo: <span id="money-on-account"></span>
+  </p>
+  <div class="info centered" id="info-text"></div>
+  <h2 class="instruction-header centered">Valitse nostettava summa</h2>
+  <div class="select-amount-1 centered">
+    <button class="selectAmount button-label centered" onclick="selectAmount(20)">20 €</button>
+  </div>
+  <div class="select-amount-2 centered">
+    <button class="selectAmount button-label centered" onclick="selectAmount(50)">50 €</button>
+  </div>
+  <div class="raise-button centered">
+    <button class="raiseCash button-label centered" onclick="raiseCash()">Nosta rahaa</button>
+  </div>
+</body>
+
+</html>
